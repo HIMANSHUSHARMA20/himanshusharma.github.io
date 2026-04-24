@@ -56,6 +56,50 @@
 }
 
 
+/* Added custom CSS for Info Section Alignment and Spacing */
+.about-info {
+  padding: 1.5rem 0;
+}
+
+.about-info p {
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767.98px) {
+  .about-info p {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-info .title-s {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.about-info .title-s {
+  font-weight: 700;
+  color: #ffbd39;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.about-info span:last-child {
+  color: #fff;
+}
+
+/* Subtle hover effects */
+.btn:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 189, 57, 0.3);
+}
+
+.zoom-effect:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
 
 #typing-animation {
   position: relative;
@@ -184,8 +228,8 @@
 			            <h2>Aspiring Cybersecurity Professional</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p><a href="https://www.instagram.com/gyaanwith.me/" class="btn btn-primary py-3 px-4">Instagram</a> 
-							<a href="https://github.com/HIMANSHUSHARMA20" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+			            <p><a href="https://www.linkedin.com/in/himanshusharmacyber/" target="_blank" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/HIMANSHUSHARMA20" target="_blank" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -204,21 +248,12 @@
 					<div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
 							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <!-- <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div> -->
-									</div>
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Himanshu Sharma</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Pen Tester, Junior Red Team Operator</span></p>
-										<p><span class="title-s">Experience: </span> <span>THM Labs</span></p>
-										<p><span class="title-s">Address: </span> <span>Delhi, India</span></p>
-									  </div>
-									</div>
-								  </div>
+								<div class="about-info">
+									<p><span class="title-s">Name: </span> <span>Himanshu Sharma</span></p>
+									<p><span class="title-s">Job Role: </span> <span>Pen Tester, Junior Red Team Operator</span></p>
+									<p><span class="title-s">Experience: </span> <span>Cybersecurity Intern at CodeVirus Security</span></p>
+									<p><span class="title-s">Address: </span> <span>Delhi, India</span></p>
+								</div>
 
 								<div class="skill-mf">
 									<p class="title-s">Skills</p>
@@ -272,11 +307,11 @@
 								<p>I am Himanshu Sharma, currently pursuing my B.Tech in Computer Science Engineering at Manav Rachna University. I am building my career in cybersecurity with a strong focus on red team operations and penetration testing. I have completed the Pre-Security path and am close to finishing Cyber 101 on TryHackMe, where I actively engage in hands-on labs to strengthen my practical knowledge. Alongside structured learning, I have also participated in several international Capture The Flag (CTF) challenges, which have helped me apply my skills in real-world attack and defense scenarios. My interests lie in ethical hacking, web application security, and network defense, and I am committed to continuously enhancing my technical expertise through research, challenges, and community learning.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><span>Profile:</span> <span>Security Engineer</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Digital Forensics, Network Security, Ethical Hacking &amp; Penetration Testing</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Penetration Testing, Red Teaming, Vulnerability Assessment &amp; API Security</span></li>
 									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
 									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>Tech Skills:</span> <span>Python, Bash Scripting, Wireshark &amp; Burp Suite</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Communication & Documentation, Git, Google Analytics &amp; Web Dev</span></li>
+									<li class="d-flex"><span>Tech Skills:</span> <span>Python, Nmap, Burp Suite, Metasploit, OWASP Top 10 &amp; Wireshark</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Git, GitHub, VS Code &amp; VirtualBox</span></li>
 									<li class="d-flex"><span>Interest:</span> <span>Traveling</span></li>
 									
 								</ul>
@@ -287,7 +322,7 @@
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
-									<span class="number" data-number="4">0</span> <span>+</span>
+									<span class="number" data-number="7">0</span> <span>+</span>
 									<span>&nbsp; Projects completed</span>
 								</p>
 								<p><a href="https://www.linkedin.com/in/himanshusharmacyber/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
@@ -308,49 +343,32 @@
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p>My practical experience includes successfully completing a client project, demonstrating the ability to deliver results in real-world cybersecurity and technical contexts. I specialize in red team practices, penetration testing, and web application security, with extensive hands-on training through TryHackMe labs. Beyond cybersecurity, I have expertise in web development, data structures, and project management. I am the Core member & Security Head of an AI-driven startup focused on automating academic evaluation, where we have secured funding and achieved recognition. In this role, I oversee the security architecture and testing, ensuring robustness while contributing to overall product development.</p>
+            <p>Aspiring Cybersecurity Professional and Engineering Student at Manav Rachna University, specializing in Red Team operations and penetration testing. Core member and Security Head of an AI-driven startup, with a strong background in web application security, vulnerability assessment, and international CTF challenges. Dedicated to hands-on practical learning, research, and building automated security tools like the Pentest CLI Assistant (PCA).</p>
           </div>
         </div>
 
-		<!-- <div class="row">
+		<div class="row">
 			<h1 class="big-4">Experience</h1>
 			<div class="underline"></div>
 		</div>
 		<br>
 		
 		<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2021-Present</span>
-						<h2>Senior Data Analyst</h2>
-						<span class="position">Merkle</span>
-						<p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International. 
+						<span class="date">Jan'26 - April'26</span>
+						<h2>Cybersecurity Intern</h2>
+						<span class="position">CodeVirus Security</span>
+						<p class="mt-4">
 							<ul>
-								<li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
-								<li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
-								<li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+								<li>Performed vulnerability assessments and penetration testing on web applications using tools like Nmap and Burp Suite, identifying misconfigurations, input validation issues, and OWASP vulnerabilities.</li>
+								<li>Contributed to detailed security reports with impact analysis and remediation steps while collaborating with the team to understand real-world attack scenarios and defensive strategies.</li>
 							</ul>
 						</p>
 					</div>
 
 				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2018-2021</span>
-						<h2>Senior Data Analyst</h2>
-						<span class="position">iQuanti</span>
-						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
-							<ul>
-								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
-								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
-								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-			</div> -->
+			</div>
 
 		<br>
 		<br>
@@ -383,7 +401,7 @@
 
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="https://drive.google.com/file/d/1id6pq5-5cQxwASMXH7XpiUfca_vYySbw/view?usp=sharing" target="_blank" class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -391,77 +409,7 @@
 
    
 
-    <!-- <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
-                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
-                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-	<br>
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
-				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
-    </section> -->
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
@@ -469,7 +417,7 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="2">0</strong>
+                <strong class="number" data-number="3">0</strong><span>+</span>
                 <span>Achievements</span>
               </div>
             </div>
@@ -477,7 +425,7 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="4">0</strong>
+                <strong class="number" data-number="7">0</strong><span>+</span>
                 <span>Projects</span>
               </div>
             </div>
@@ -485,8 +433,8 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="12">0</strong>
-                <span>CTF's</span>
+                <strong class="number" data-number="30">0</strong><span>+</span>
+                <span>CTFs</span>
               </div>
             </div>
           </div>
@@ -561,7 +509,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="#">resumelink</a></p>
+	            <p><a href="https://drive.google.com/file/d/1id6pq5-5cQxwASMXH7XpiUfca_vYySbw/view?usp=sharing" target="_blank">Download Resume</a></p>
 	          </div>
           </div>
 
@@ -577,10 +525,10 @@
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate normal-txt">Find me on  </li>
 					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/himanshu-sharma-3225102ba/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/himanshusharmacyber/"><span class="icon-linkedin"></span></a></li>  
 					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li> -->
 					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
-				      <li class="ftco-animate"><a href="https://www.instagram.com/gyaanwith.me/"><span class="icon-instagram"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/sharmaaa.h/"><span class="icon-instagram"></span></a></li>
 					</ul>
 				<br>
 		   </div>
